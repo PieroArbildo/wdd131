@@ -99,17 +99,20 @@ p {
   text-align: center;
   text-justify: auto;
   font-size: 18px;
+  text-align: justify;
 }
 
 #piero-photo {
   width: 270px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-left: 18px;
 }
 
 #peru-flag {
   width: 200px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-right: 10px;
 }
 
 #left-section {
