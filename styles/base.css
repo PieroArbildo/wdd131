@@ -4,12 +4,14 @@
   font-family: "Outfit", sans-serif;
 }
 
-header {
-  grid-column: 1/3;
+
+header{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
 }
-header h1 {
+header h1{
   background-color: black;
-  /*color: rgb(203, 206, 206);*/
   color: white;
   font-size: 20px;
   padding: 20px;
@@ -17,12 +19,10 @@ header h1 {
   height: 40px;
 }
 
-nav {
-  grid-column: 1/3;
-}
-
-nav ul {
+header nav ul{
   display: flex;
+  flex-direction: row;
+  align-items: center;
   height: 60px;
   background-color: #38219a;
   color: white;
@@ -31,6 +31,18 @@ nav ul {
   list-style-type: none;
   text-align: center;
   align-items: center;
+}
+@media (max-width: 1050px) {
+  header nav ul{
+  flex-direction: column;
+  height: auto;
+  padding-top: 15px;
+  }
+}
+@media (max-width: 1050px) {
+  header nav ul li{
+  margin-bottom: 15px;
+  }
 }
 nav ul :hover {
   color: #b6b5b5;
@@ -47,24 +59,6 @@ nav ul li a {
   color: inherit;
   transition: box-shadow 0.3s ease;
 }
-
-footer {
-  grid-column: 1/3;
-  background-color: black;
-  color: rgb(203, 206, 206);
-  font-size: 20px;
-  padding: 20px;
-  height: 40px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-}
-
 
 main {
   display: grid;
@@ -225,3 +219,24 @@ p {
 #right-section ul li a:hover {
   text-decoration: underline;
 }
+
+footer{
+  text-align: center;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  height: 70px;
+  padding-top: 20px;
+  margin-top: auto;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
