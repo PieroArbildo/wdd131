@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Place</title>
+    <meta
+      name="description"
+      content="Place - Dynamic Web Fundamentals BYUI-WDD131"
+    />
+    <meta name="author" content="Piero Arbildo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/place.css" rel="stylesheet" />
+    <link href="styles/place-large.css" rel="stylesheet" />
+    <script src="scripts/place.js" defer></script>
+  </head>
+  <body>
+    <header>
+        <div id="left-header"></div>
+        <div id="center-header"><h1>Perú</h1></div>
+        <div id="right-header"></div>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/place-peru-large.webp" media="(min-width:1000px)">
+                <source srcset="images/place-peru-medium.webp" media="(min-width:500px)">
+                <img src="images/place-peru-small.webp" alt="temple Peru Lima, picture" width="1900 px" height="792 px">
+            </picture>
+        </div>
+        <div class="information" id="data">
+            <h2>Data</h2>
+            <p>Area: 1.285.220 km²</p>
+            <p>Population: 34.050.000</p>
+            <p>Capital: Lima</p>
+            <p>Languages: Español, Quechua y Aymara</p>
+            <p>Currency: Nuevo Sol (PEN)</p>
+            <p>Time Zone: UTC-51</p>
+            <p>Calling Code: +511</p>
+            <p>Internet TLD: .pe</p>
+        </div>
+        <div class="information" id="weather">
+            <h2>Weather</h2>
+            <img src="images/weather-icon.svg" alt="weather-icon" width="80 px">
+            <p id="temp"></p>
+            <p id="cond"></p>
+            <p id="wind"></p>
+            <p id="windChill"></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🏆 Piero Arbildo 🏆 Peru</p>
+        <span id="lastmodification"></span>
+      </footer>
+  </body>
+</html>

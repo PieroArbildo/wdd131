@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  color: #333;
+}
+
+main div figure img:hover {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: red;
+  height: 80px;
+  border: 1px solid rgb(153, 151, 151);
+  box-shadow: inset 0 0 10px rgba(153, 151, 151, 1);
+}
+#center-header {
+  background-color: white;
+  text-align: center;
+  align-content: center;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+
+  object-fit: cover;
+  border-bottom: 20px solid rgb(153, 151, 151);
+}
+
+.information {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgb(216, 212, 212);
+  padding-bottom: 20px;
+
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.information p {
+  font-size: 18px;
+  padding: 5px;
+}
+
+footer {
+  text-align: center;
+  background-color: red;
+  color: black;
+  font-size: 20px;
+  height: 100px;
+  padding-top: 0px;
+  margin-top: auto;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p,
+footer span {
+  background-color: #f9f9f9;
+}
+footer p:first-child {
+  padding-top: 10px;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+.information h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}

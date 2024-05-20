@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive-images</title>
+    <meta
+      name="description"
+      content="Responsive-images - Dynamic Web Fundamentals BYUI-WDD131"
+    />
+    <meta name="author" content="Piero Arbildo" />
+    <link href="styles/responsive-images.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/peru-temple-large.webp" media="(min-width:1000px)">
+                <source srcset="images/peru-temple-medium.webp" media="(min-width:500px)">
+                <img src="images/peru-temple-small.webp" alt="temple Peru Lima, picture" width="1279" height="640">
+            </picture>
+        </div>
+    </main>
+  </body>
+</html>
