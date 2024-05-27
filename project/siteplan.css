@@ -156,3 +156,31 @@ main p,
 main ul li {
   margin-top: 15px;
 }
+/*
+main ul li{
+    display: inline;
+}*/
+/*
+main ul li a{
+    display: block;
+}*/
+
+#wrire1,#wrire2{
+display: flex;
+flex-direction: column;
+padding: 40px;
+}
+
+#wireframes{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    
+
+}
+#wrire1 img{
+    width: 400px;
+}
+#wrire2 img{
+    width: 600px;
+}
