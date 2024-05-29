@@ -5,6 +5,17 @@ class="highlight">${today.getFullYear()}</span>`;
 const lastModified = document.querySelector("#lastmodification");
 lastModified.innerHTML = `Last modification: <span class="highlight">${document.lastModified} (GMT-5)</span>`;
 
+const radioButtons = document.querySelectorAll('.radios input[type="radio"]');
+radioButtons.forEach(radioButton => {
+  radioButton.addEventListener('change', function() {
+    if (this.checked) {
+      document.querySelector('.radios').style.borderColor = 'green';
+    } else {
+      document.querySelector('.radios').style.borderColor = 'red';
+    }
+  });
+});
+
 const products = [
   {
     id: "fc-1888",

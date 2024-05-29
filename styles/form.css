@@ -137,3 +137,34 @@ footer {
     margin-top: 20px;
   }
   
+  .comboProducts select {
+    border: 2px solid red;
+  }
+  
+  .comboProducts select:valid {
+    border-color: green; 
+  }
+
+  .date input[type="date"] {
+    border: 2px solid red;
+  }
+  
+  .date input[type="date"]:valid {
+    border-color: green;
+  }
+
+.radios {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.radios div {
+  flex: 1;
+  max-width: 100px;
+  text-align: center;
+}
