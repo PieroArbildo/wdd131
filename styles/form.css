@@ -1,4 +1,139 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: large;
+}
+
+header {
+  background-color: rgb(47, 11, 80);
+  color: white;
+  text-align: center;
+  height: 80px;
+  align-content: center;
+}
+
+.form {
+  background-color: rgb(198, 188, 212);
+  color: black;
+  text-align: center;
+  margin: 20px;
+  font-size: 20px;
+  padding: 20px;
+}
+
+#productName {
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 0;
+  background-color: white;
+}
+
+#radioTitle {
+  display: block;
+  margin-top: 20px;
+}
+
+.radios:not(:first-child) {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.radios div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 15px;
+  margin-top: 0px;
+}
+
+.radios div label {
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#dateChoose {
+  text-align: center;
+  margin: 10px;
+  width: 300px;
+  height: 30px;
+}
+
+#label2 {
+  font-size: 15px;
+  color: rgb(12, 12, 117);
+}
+
+.checkBox:not(:first-child) {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.checkBox div:not(:first-child) {
+  margin-top: 10px;
+  margin: 5px;
+  width: 200px;
+  text-align: left;
+}
+
+.text,
+.textName {
+  margin-top: 10px;
+  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.textName input {
+  margin-top: 5px;
+  width: 300px;
+  height: 25px;
+}
+
+.text textarea {
+  margin-top: 5px;
+  width: 300px;
+  height: 100px;
+  resize: none;
+}
+
+#submit {
+  border-radius: 0;
+  height: 45px;
+  width: 300px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.text span,
+.textName span {
+  font-size: 15px;
+  color: rgb(12, 12, 117);
+}
+
+footer {
+    grid-column: 1/3;
+    background-color: rgb(47, 11, 80);
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    height: 80px;
+    text-align: center;
+    align-content: center;
+    margin-top: 20px;
+  }
+  

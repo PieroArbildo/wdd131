@@ -1,32 +1,122 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Form</title>
+    <title>Product Review Form</title>
     <meta
       name="description"
-      content="Form - Dynamic Web Fundamentals BYUI-WDD131"
+      content="Product Review Form - Dynamic Web Fundamentals BYUI-WDD131"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
     />
     <meta name="author" content="Piero Arbildo" />
     <link href="styles/form.css" rel="stylesheet" />
     <script src="scripts/form.js" defer></script>
   </head>
   <body>
-    <form action="" method="get" class="form-example">
-        <div class="form-example">
-          <label for="name">Enter your name: </label>
-          <input type="text" name="name" id="name" required />
+    <header>
+      <h1>Product Review</h1>
+    </header>
+    <form action="review.html" method="get" class="form">
+      <label id="firstLabel" for="productName">Product name</label>
+      <div class="comboProducts">
+        <select
+          name="productName"
+          id="productName"
+          class="productName1"
+          required
+        >
+          <option value="" disabled selected>Choose a Product</option>
+        </select>
+      </div>
+      <label id="radioTitle" for="radioButton">Overall Rating</label>
+      <div class="radios">
+        <div>
+          <label for="rating1">⭐</label>
+          <input type="radio" id="rating1" name="radioButton" required/>
         </div>
-        <div class="form-example">
-          <label for="email">Enter your email: </label>
-          <input type="email" name="email" id="email" required />
+        <div>
+          <label for="rating2">⭐⭐</label>
+          <input type="radio" id="rating2" name="radioButton" required/>
         </div>
-        <div class="form-example">
-          <input type="submit" value="Subscribe!" />
+        <div>
+          <label for="rating3">⭐⭐⭐</label>
+          <input type="radio" id="rating3" name="radioButton" required />
         </div>
-      </form>
-
+        <div>
+          <label for="rating4">⭐⭐⭐⭐</label>
+          <input type="radio" id="rating4" name="radioButton" required/>
+        </div>
+        <div>
+          <label for="rating5">⭐⭐⭐⭐⭐</label>
+          <input type="radio" id="rating5" name="radioButton" required/>
+        </div>
+      </div>
+      <div class="date">
+        <label for="dateChoose">Date of Installation</label>
+        <input id="dateChoose" type="date" required/>
+      </div>
+      <div class="checkBox">
+        <div>
+          <label id="checkBoxTitle" for=""
+            >Which feature did you find useful in the product</label
+          >
+          <label id="label2" for="">(check all that apply)</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="durabilityCheckbox"
+            name="usefulFeature"
+            value="feature1"
+          />
+          <label for="durabilityCheckbox">Durability</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="easeOfUseCheckbox"
+            name="usefulFeature"
+            value="feature2"
+          />
+          <label for="easeOfUseCheckbox">Ease of Use</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="performanceCheckbox"
+            name="usefulFeature"
+            value="feature3"
+          />
+          <label for="performanceCheckbox">Performance</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="designCheckbox"
+            name="usefulFeature"
+            value="feature4"
+          />
+          <label for="designCheckbox">Design</label>
+        </div>
+      </div>
+      <div class="text">
+        <label for="messageTextarea"
+          >Written Review <span>(Opcional)</span></label
+        >
+        <textarea name="messaje" id="messageTextarea"></textarea>
+      </div>
+      <div class="textName">
+        <label for="nameInput">Your Name <span>(Optional)</span></label>
+        <input type="text" id="nameInput" name="userName" />
+      </div>
+      <input id="submit" name="submit" type="submit" value="Post Review" />
+    </form>
     <footer>
       <p>&copy;<span id="currentyear"></span> 🏆 Piero Arbildo 🏆 Peru</p>
       <span id="lastmodification"></span>
