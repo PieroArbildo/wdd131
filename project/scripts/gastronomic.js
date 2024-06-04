@@ -4,13 +4,13 @@ const gastronomic = [
       mealName: "Ceviche",
       ingredients: "Raw fish marinated in lime or lemon juice, seasoned with chili peppers, onions, cilantro, and salt.",
       imageUrl:
-        "/pieroarbildo/project/images/ceviche.webp",
+        "/pieroarbildo/wdd131/project/images/ceviche.webp",
     },
     {
       mealName: "Lomo Saltado",
       ingredients: "Strips of beef sautéed in a pan with onions, tomatoes, chili peppers, and other seasonings, served over french fries and rice.",
       imageUrl:
-        "/pieroarbildo/project/images/lomo.webp",
+        "/pieroarbildo/wdd131/project/images/lomo.webp",
     },
     {
       mealName: "Pollo a la Brasa",
