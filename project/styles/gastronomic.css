@@ -1,0 +1,47 @@
+
+main div figure img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+
+#card figure figcaption p{
+  display: inline;
+}
+#card figure img{
+  padding: 15px;
+  width: 340px;
+}
+
+#card figure{
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+figcaption{
+  color: rgb(77, 29, 122);
+  margin-top: 15px;
+  margin-bottom: -10px;
+  font-size: 18px;
+}
+figcaption p{
+  color: black;
+}
+figure h2{
+  margin-bottom: 8px;
+}
+
+p{
+    font-size: 20px;
+}
+
+figure p {
+    text-align: center;
+}
+
+figure{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+}

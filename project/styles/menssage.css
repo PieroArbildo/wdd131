@@ -1,0 +1,22 @@
+main{
+    height: 36vw;
+    text-align: center;
+    margin: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+main p,main p span{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.displayReview{
+    color: rgb(8, 8, 247);
+}
+
+h3{
+    margin-top: 20px;
+}

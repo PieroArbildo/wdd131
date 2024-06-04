@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siteplan</title>
+    <meta
+      name="Website Project"
+      content="Website Project - Dynamic Web Fundamentals BYUI-WDD131"
+    />
+    <meta name="author" content="Piero Arbildo" />
+    <meta
+      name="keywords"
+      content="Website Project,ynamic Web Fundamentals,BYUI-WDD131"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/visitLima.css" rel="stylesheet" />
+    <link href="styles/visitLima-large.css" rel="stylesheet" />
+    <link href="styles/contact.css" rel="stylesheet" />
+    <script src="scripts/visitLima.js" defer></script>
+    <script src="scripts/gastronomic.js" defer></script>
+    <script src="scripts/submit.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Hubballi&family=Kotta+One&family=Snippet&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a id="title" href="#"><h1>Visit Lima</h1></a>
+        <a id="menu" href="#" class=""></a>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="visitLima.html">Home</a>
+          </li>
+          <li>
+            <a href="gastronomic.html">Gastronomy</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h3>Contact us</h3>
+      <p>
+        If you want personalized information or to make a recommendation, write
+        to us
+      </p>
+      <div>
+        <form
+          class="form"
+          action="/menssage.html"
+          method="get"
+          id="contact-form"
+        >
+          <div>
+            <label for="name">Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              aria-required="true"
+              placeholder="Your name"
+            />
+          </div>
+          <div>
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              aria-required="true"
+              placeholder="you@mail.com"
+            />
+          </div>
+          <div>
+            <label for="phone">Phone:</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+              aria-required="true"
+              placeholder="1234567890"
+            />
+          </div>
+          <div>
+            <label for="message">Menssage:</label>
+            <textarea
+              id="message"
+              name="message"
+              required
+              aria-required="true"
+              placeholder="Write your menssage here..."
+            ></textarea>
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear">2024</span> 🏆 Piero Arbildo 🏆</p>
+      <span id="lastmodification"></span>
+    </footer>
+  </body>
+</html>

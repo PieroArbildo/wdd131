@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siteplan</title>
+    <meta
+      name="Website Project"
+      content="Website Project - Dynamic Web Fundamentals BYUI-WDD131"
+    />
+    <meta name="author" content="Piero Arbildo" />
+    <meta
+      name="keywords"
+      content="Website Project,ynamic Web Fundamentals,BYUI-WDD131"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="styles/visitLima.css" rel="stylesheet" />
+    <link href="styles/visitLima-large.css" rel="stylesheet" />
+    <script src="scripts/visitLima.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Hubballi&family=Kotta+One&family=Snippet&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <a id="title" href="#"><h1>Visit Lima</h1></a>
+        <a id="menu" href="#" class=""></a>
+      </div>
+      <nav>
+        <ul class="navigation">
+          <li>
+            <a href="visitLima.html">Home</a>
+          </li>
+          <li>
+            <a href="gastronomic.html">Gastronomy</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact us</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/place-peru-large.webp"
+            media="(min-width:1000px)"
+          />
+          <source
+            srcset="images/place-peru-medium.webp"
+            media="(min-width:500px)"
+          />
+          <img
+            src="images/place-peru-small.webp"
+            alt="coast of peru, picture"
+            width="1900"
+            height="792"
+            loading="lazy"
+          />
+        </picture>
+      </div>
+
+      <div id="content-p1">
+        <p id="p1">
+          Lima, the capital of Peru, is located on the central coast of the
+          country. Known for its rich culinary heritage and impressive
+          historical heritage, it is a popular tourist destination for food and
+          culture enthusiasts. The city offers a vibrant gastronomic scene that
+          blends Peruvian tradition with international influences. Additionally,
+          it hosts a variety of stunning tourist attractions, such as the
+          Historic Center and other districts filled with art and music. It also
+          boasts beautiful beaches where visitors can relax and enjoy the
+          Pacific sun.
+        </p>
+      </div>
+
+      <h2>Featured Events</h2>
+      <div class="all-events" id="events">
+        <div id="event1">
+          <h3>Surf Championship 🏄‍♂️</h3>
+          <img
+            src="images/surf.jpg"
+            alt="Surf Championship"
+            loading="lazy"
+          />
+          <p>
+            The beaches of Lima are chosen for surfing championships due to
+            their consistent and high-quality waves, favorable climatic
+            conditions, and proximity to the city, which offers adequate
+            infrastructure and services. Additionally, the surfing tradition in
+            the region and the international recognition of its beaches
+            contribute to their attractiveness for surfing events.
+          </p>
+        </div>
+
+        <div class="events" id="event2">
+          <h3>Mistura Gastronomic Fair 🍴</h3>
+          <img
+            src="images/mistura.webp"
+            alt="Mistura Gastronomic Fair"
+            loading="lazy"
+          />
+          <p>
+            Mistura is an important gastronomic festival in Lima, Peru, that
+            celebrates the diversity and richness of Peruvian cuisine. It brings
+            together chefs, producers, and artisans from all over the country,
+            offering a wide variety of traditional and contemporary foods and
+            beverages. The event includes culinary demonstrations, a producers'
+            market, and cultural activities, promoting tourism and the local
+            economy.
+          </p>
+        </div>
+        <div class="events" id="event3">
+          <h3>Barranco Carnival 🎉</h3>
+          <img
+            src="images/carnaval.webp"
+            alt="Barranco Carnival"
+            loading="lazy"
+          />
+          <p>
+            The Barranco Carnival in Lima is a traditional and cultural
+            festivity celebrated in the district of Barranco, known for being
+            one of the city's most bohemian and artistic neighborhoods. This
+            carnival is distinguished by its festive atmosphere and its emphasis
+            on music, dance, and artistic expressions. Some activities that take
+            place during the carnival include Parades and Comparsas, Masks and
+            Costumes, Music and Dance, among others.
+          </p>
+        </div>
+        <div class="events" id="event4">
+          <h3>Dance in Keenedy Park 💃🕺</h3>
+          <img
+            src="images/dance.webp"
+            alt="Dance in Keenedy Park"
+            loading="lazy"
+          />
+          <p>
+            In recent years, it has become a tradition for senior citizens to
+            gather at Kennedy Park on weekends to dance to their favorite songs.
+            This spontaneous event has created a space for socializing and
+            recreation for older adults, promoting physical activity and
+            emotional well-being. Park visitors, both locals and tourists, enjoy
+            the cheerful atmosphere and often join in the fun.
+          </p>
+        </div>
+      </div>
+      <h2>Lima Map</h2>
+      <iframe
+        id="map"
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d249743.73308341802!2d-77.15293315922897!3d-12.026589791864877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2spe!4v1717139656128!5m2!1ses-419!2spe"
+        width="430"
+        height="375"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </main>
+    <footer>
+      <p>&copy;<span id="currentyear">2024</span> 🏆 Piero Arbildo 🏆</p>
+      <span id="lastmodification"></span>
+    </footer>
+  </body>
+</html>
