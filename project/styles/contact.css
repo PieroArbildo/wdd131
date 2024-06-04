@@ -65,3 +65,8 @@ textarea:valid {
     cursor: pointer;
     background-color: #bdbdbd;
 }
+
+#submit{
+ font-family: var(--font-body);
+ font-size: 25px;
+}
