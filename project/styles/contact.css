@@ -33,7 +33,7 @@ textarea {
 
 input,
 textarea,
-button {
+#submit {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -57,11 +57,11 @@ textarea:valid {
   border-color: green;
 }
 
-button:hover{
+#submit:hover{
     cursor: pointer;
     background-color: #bdbdbd;
 }
-button:focus{
+#submit:focus{
     cursor: pointer;
     background-color: #bdbdbd;
 }
